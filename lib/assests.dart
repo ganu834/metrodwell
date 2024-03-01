@@ -29,9 +29,3 @@ class AssestsPage extends StatelessWidget {
     );
   }
 }
-
-// void main() {
-//   runApp(MaterialApp(
-//     home: AssestsPage(),
-//   ));
-// }
