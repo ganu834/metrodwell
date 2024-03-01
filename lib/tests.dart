@@ -23,15 +23,8 @@ class TestsPage extends StatelessWidget {
           Divider(
             thickness: 2.0,
           )
-          // Add more ListTiles as needed
         ],
       ),
     );
   }
 }
-
-// void main() {
-//   runApp(MaterialApp(
-//     home: AssestsPage(),
-//   ));
-// }
