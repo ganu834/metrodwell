@@ -12,7 +12,7 @@ class AssestsPage extends StatelessWidget {
       body: ListView(
         children: const [
           ListTile(
-            title: Text('assests 1'),
+            title: Text('assests 3'),
           ),
           Divider(
             thickness: 2.0,
