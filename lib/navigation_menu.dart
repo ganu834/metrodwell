@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/assests.dart';
-import 'package:flutter_application_1/tests.dart';
+import 'package:flutter_application_1/assessments.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Icons.book_outlined,
                     color: Colors.black87,
                   ),
-                  label: 'Test',
+                  label: 'Assesments',
                   activeIcon: Icon(
                     Icons.book,
                     color: Colors.black87,

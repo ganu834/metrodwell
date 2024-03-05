@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/createassests.dart';
+import 'createassessment.dart';
 
-class AssestsPage extends StatelessWidget {
-  const AssestsPage({super.key});
+class TestsPage extends StatelessWidget {
+  const TestsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Assets Page'),
+        title: const Text('Assessment Page'),
         actions: [
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const Createassests(),
-                ),
+                    builder: (context) =>
+                        const Createassessment()), // Corrected constructor call
               );
             },
-            child: const Text(
-              'Create Assets +',
-              style: TextStyle(color: Colors.black),
-            ),
+            child: const Text('Create Assessment +'),
           ),
         ],
       ),
@@ -48,17 +46,17 @@ class AssestsPage extends StatelessWidget {
                           children: [
                             Expanded(
                               child: ListTile(
-                                title: Text(' Name:-Lawn Mover'),
+                                title: Text('Assessment Name:-January 2024'),
                               ),
                             ),
                             Expanded(
                               child: ListTile(
-                                title: Text('Date of procurement:-20000'),
+                                title: Text('total number of items:-20000'),
                               ),
                             ),
                             Expanded(
                               child: ListTile(
-                                title: Text('Price:-1000'),
+                                title: Text('QA Pass:-10000'),
                               ),
                             ),
                           ],
@@ -67,17 +65,7 @@ class AssestsPage extends StatelessWidget {
                           children: [
                             Expanded(
                               child: ListTile(
-                                title: Text('Date of Expiry:-Jan 15 2025'),
-                              ),
-                            ),
-                            Expanded(
-                              child: ListTile(
-                                title: Text('Status:-Active'),
-                              ),
-                            ),
-                            Expanded(
-                              child: ListTile(
-                                title: Icon(Icons.edit),
+                                title: Text('QA Fail:-10000'),
                               ),
                             ),
                           ],
@@ -90,7 +78,7 @@ class AssestsPage extends StatelessWidget {
                   height: 200,
                   child: Card(
                     color: Colors.white,
-                    elevation: 5,
+                    elevation: 10,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                       side: const BorderSide(color: Colors.black, width: 1),
@@ -101,17 +89,17 @@ class AssestsPage extends StatelessWidget {
                           children: [
                             Expanded(
                               child: ListTile(
-                                title: Text(' Name:-Lawn Mover'),
+                                title: Text('Assessment Name:-February 2024'),
                               ),
                             ),
                             Expanded(
                               child: ListTile(
-                                title: Text('Date of procurement:-20000'),
+                                title: Text('total number of items:-30000'),
                               ),
                             ),
                             Expanded(
                               child: ListTile(
-                                title: Text('Price:-1000'),
+                                title: Text('QA Pass:-20000'),
                               ),
                             ),
                           ],
@@ -120,17 +108,7 @@ class AssestsPage extends StatelessWidget {
                           children: [
                             Expanded(
                               child: ListTile(
-                                title: Text('Date of Expiry:-Jan 15 2025'),
-                              ),
-                            ),
-                            Expanded(
-                              child: ListTile(
-                                title: Text('Status:-Active'),
-                              ),
-                            ),
-                            Expanded(
-                              child: ListTile(
-                                title: Icon(Icons.edit),
+                                title: Text('QA Fail:-10000'),
                               ),
                             ),
                           ],
